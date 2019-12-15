@@ -1,0 +1,29 @@
+{
+  "name": "graphql-gateway",
+  "version": "1.0.0",
+  "description": "Graphql Server",
+  "main": "server.ts",
+  "scripts": {
+    "start": "nodemon server",
+    "build": "rm -rf ./build && tsc && cp package.json build/package.json && cp Dockerfile build/Dockerfile"
+  },
+  "author": "Anthony Loera",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.16",
+    "nodemon": "^2.0.1",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.9.13",
+    "aws-sdk": "^2.586.0",
+    "graphql": "^14.5.8",
+    "lodash": "^4.17.15"
+  }
+}
